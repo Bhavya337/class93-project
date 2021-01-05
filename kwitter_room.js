@@ -1,9 +1,8 @@
-
-//ADD YOUR FIREBASE LINKS HERE
- // Your web app's Firebase configuration
- var firebaseConfig = {
+// Your web app's Firebase configuration
+var firebaseConfig = {
   apiKey: "AIzaSyBhwUyGCoOOq7ujz8Wc7QRBsD0kqIeRN0k",
   authDomain: "lets-chat-web-app-ef8a8.firebaseapp.com",
+  databaseURL: "https://lets-chat-web-app-ef8a8-default-rtdb.firebaseio.com",
   projectId: "lets-chat-web-app-ef8a8",
   storageBucket: "lets-chat-web-app-ef8a8.appspot.com",
   messagingSenderId: "308843783236",
@@ -11,8 +10,7 @@
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-    username=localStorage.getItem("user_name");
- 
+
 
     function add_room() {
       Room_name=document.getElementById("room_name").value;
