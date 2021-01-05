@@ -10,6 +10,7 @@ var firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+username=localStorage.getItem("user_name");
 
 
     function add_room() {
