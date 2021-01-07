@@ -18,7 +18,7 @@ username=localStorage.getItem("user_name");
       firebase.database().ref("/").child(Room_name).update({ 
      purpose:"adding_room_name"  });
   
-    localStorage.setItem("Room_name",Room_name);
+    localStorage.setItem("room_name",Room_name);
     window.location="kwitter_page.html";
   }
   function getData() {firebase.database().ref("/").on('value', function(snapshot) {document.getElementById("output").innerHTML = "";snapshot.forEach(function(childSnapshot) {childKey  = childSnapshot.key;
@@ -34,9 +34,15 @@ username=localStorage.getItem("user_name");
   getData();
   function  redirecttoRoomName(name){
     console.log(name); 
-    localStorage.setItem("roomname", name);
+    localStorage.setItem("room_name", name);
     window.location="kwitter_page.html";
   }
+  function logout(){
+    localStorage.removeItem("user_name");
+    localStorage.removeItem("room_name");
+    window.location="index.html";
+  }
+  
   
   
  
