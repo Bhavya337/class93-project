@@ -32,7 +32,7 @@ username=localStorage.getItem("user_name");
     //End code
         });});}
   getData();
-  function  redirecttoRoomName(name){
+  function  redirectToRoomName(name){
     console.log(name); 
     localStorage.setItem("room_name", name);
     window.location="kwitter_page.html";
